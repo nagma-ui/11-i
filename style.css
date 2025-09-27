@@ -1,0 +1,164 @@
+/* Body */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #0d0d0d;
+  color: #f5d76e;
+}
+
+/* Shiny gold text effect */
+.gold-text {
+  background: linear-gradient(45deg, #f7e07c, #ffd700, #f7e07c, #fff2a8);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 6s ease-in-out infinite;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7),
+               0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+/* Header */
+header {
+  background: #111;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, #fff2a8, #ffd700, #f7e07c) 1;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* Navigation */
+nav {
+  background: #1a1a1a;
+  padding: 0.7rem;
+  text-align: center;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #ffd700, #f7e07c, #fff2a8) 1;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  background: linear-gradient(45deg, #f7e07c, #ffd700, #fff2a8);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 6s ease-in-out infinite;
+  transition: text-shadow 0.3s;
+}
+
+nav a:hover {
+  text-shadow: 0 0 10px #ffd700, 0 0 20px #f5d76e;
+}
+
+/* Main */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid transparent;
+  background: linear-gradient(#111, #111) padding-box,
+              linear-gradient(60deg, #fff2a8, #ffd700, #f7e07c, #fff2a8) border-box;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 30px;
+  background: #111;
+  border-top: 2px solid;
+  border-image: linear-gradient(to right, #fff2a8, #ffd700, #f7e07c) 1;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #ffd700;
+}
+
+/* Shine animation */
+@keyframes shine {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+/* Class Logo */
+.class-logo {
+  margin-top: 15px;
+  max-width: 120px;   /* adjust size */
+  height: auto;
+  border-radius: 50%; /* round logo */
+  border: 3px solid transparent;
+  background: linear-gradient(#111, #111) padding-box,
+              linear-gradient(60deg, #fff2a8, #ffd700, #f7e07c, #fff2a8) border-box;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.class-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 1);
+}
+/* Social Links Section */
+.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px auto;
+  max-width: 400px;
+}
+
+.links li {
+  margin: 15px 0;
+}
+
+.links a {
+  display: block;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background: linear-gradient(45deg, #f7e07c, #ffd700, #fff2a8);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 6s ease-in-out infinite;
+  border: 2px solid #FFD700; /* simple gold border */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.links a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.9);
+}
